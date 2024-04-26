@@ -1,3 +1,7 @@
+package implementations;
+
+import interfaces.MyList;
+
 import java.util.Iterator;
 
 public class MyLinkedList<T> implements MyList<T> {
