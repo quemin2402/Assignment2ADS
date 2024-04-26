@@ -1,5 +1,4 @@
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 
 public class MyLinkedList<T> implements MyList<T> {
 
@@ -44,18 +43,21 @@ public class MyLinkedList<T> implements MyList<T> {
     }
 
     @Override
-    public void remove(int index) {
+    public T remove(int index) {
 
+        return null;
     }
 
     @Override
-    public void removeFirst() {
+    public T removeFirst() {
 
+        return null;
     }
 
     @Override
-    public void removeLast() {
+    public T removeLast() {
 
+        return null;
     }
 
     @Override

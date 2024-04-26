@@ -1,5 +1,3 @@
-import java.util.Iterator;
-
 public interface MyList<T> extends Iterable<T>{
     void add(T item);
     void set(int index, T item);
@@ -9,14 +7,14 @@ public interface MyList<T> extends Iterable<T>{
     T get(int index);
     T getFirst();
     T getLast();
-    void remove(int index);
-    void removeFirst();
-    void removeLast();
+    T remove(int index);
+    T removeFirst();
+    T removeLast();
     void sort();
     int indexOf(Object object);
     int lastIndexOf(Object object);
     boolean exists(Object object);
-    Object[] toArray();
+    public Object[] toArray();
     void clear();
     int size();
 }
