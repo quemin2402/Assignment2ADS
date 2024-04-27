@@ -1,8 +1,12 @@
+import datastructures.MyMinHeap;
+import datastructures.MyQueue;
+import datastructures.MyStack;
 import implementations.MyArrayList;
 import implementations.MyLinkedList;
 
 public class Main {
     public static void main(String[] args) {
+        // array examples
         MyArrayList<Integer> myList = new MyArrayList<>();
         myList.add(43);
         myList.add(23);
@@ -30,6 +34,7 @@ public class Main {
         System.out.println("size after clear: " + myList.size());
 
         System.out.println();
+        // linked list examples
 
         MyLinkedList<Integer> list = new MyLinkedList<>();
 
@@ -55,5 +60,36 @@ public class Main {
         list.addLast(25);
         System.out.println("list after adding elements to empty list:");
         list.printList();
+
+
+        System.out.println();
+        // stack examples
+
+        MyStack<Integer> stack = new MyStack<>();
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        System.out.println("stack top after pushes: " + stack.peek());
+        System.out.println("stack pop: " + stack.pop());
+        System.out.println("stack top after pop: " + stack.peek());
+
+        // queue examples
+        MyQueue<Integer> queue = new MyQueue<>();
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        System.out.println("queue front after enqueues: " + queue.peek());
+        System.out.println("queue dequeue: " + queue.dequeue());
+        System.out.println("queue front after dequeue: " + queue.peek());
+
+        // minheap examples
+        MyMinHeap<Integer> minHeap = new MyMinHeap<>();
+        minHeap.insert(20);
+        minHeap.insert(10);
+        minHeap.insert(15);
+        System.out.println("min heap top after inserts: " + minHeap.peekMin());
+        System.out.println("min heap extract min: " + minHeap.extractMin());
+        System.out.println("min heap top after extract: " + minHeap.peekMin());
+
     }
 }
