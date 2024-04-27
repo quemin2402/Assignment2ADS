@@ -1,4 +1,5 @@
 import implementations.MyArrayList;
+import implementations.MyLinkedList;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,5 +28,32 @@ public class Main {
 
         myList.clear();
         System.out.println("size after clear: " + myList.size());
+
+        System.out.println();
+
+        MyLinkedList<Integer> list = new MyLinkedList<>();
+
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        System.out.println("initial list:");
+        list.printList();
+        list.addFirst(5);
+        list.addLast(35);
+        System.out.println("list after adding first (5) and last (35):");
+        list.printList();
+        list.removeFirst();
+        list.removeLast();
+        System.out.println("list after removing first and last:");
+        list.printList();
+        list.removeLast();
+        list.removeLast();
+        list.removeLast();
+        System.out.println("list after removing all elements:");
+        list.printList();
+        list.addFirst(15);
+        list.addLast(25);
+        System.out.println("list after adding elements to empty list:");
+        list.printList();
     }
 }
