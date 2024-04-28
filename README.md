@@ -36,11 +36,6 @@ Follow these steps to see the data structures in action and explore various list
 3. Build the project to resolve dependencies.
 4. Run the `Main.java` class. This class is designed to not only demonstrate basic operations like pushing, popping, enqueueing, and dequeueing but also various methods from the `MyList` interface. You can test different operations with `MyArrayList` and `MyLinkedList`, such as adding, removing, accessing elements, and sorting the list, to see how these data structures manage elements efficiently.
 
-
-Чтобы дополнить эту часть README файла, можно добавить более конкретные примеры использования методов MyList на разных структурах данных. Это позволит читателям лучше понять, как они могут использовать предоставленные вами реализации в своих проектах. Вот предложение:
-
-markdown
-Copy code
 ## Usage Examples
 
 The `Main` class includes practical examples for each data structure, demonstrating how to handle common operations and edge cases. Below are detailed examples showcasing the use of various `MyList` methods with `MyArrayList` and `MyLinkedList`:
